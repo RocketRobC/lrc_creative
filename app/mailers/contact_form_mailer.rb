@@ -1,6 +1,6 @@
 class ContactFormMailer < ApplicationMailer
 
-  def enquiry_resopnse(contact_form_id)
+  def enquiry_response(contact_form_id)
     @contact_form = ContactForm.find(contact_form_id)
     mail(to: @contact_form.email, subject: "Thanks #{@contact_form.first_name} for contacting LRC Creative")
   end

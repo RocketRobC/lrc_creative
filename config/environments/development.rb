@@ -43,7 +43,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.mandrillapp.com',
   port:                 587,
-  domain:               'robcornishmusic.com',
+  domain:               'lrccreative.com',
   user_name:            'rob@robcornishmusic.com',
   # password:
   authentication:       'plain',

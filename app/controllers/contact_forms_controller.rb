@@ -13,7 +13,8 @@ class ContactFormsController < ApplicationController
 
     respond_to do |format|
       if @contact_form.save
-        # ContactFormMailer.enquiry_received(@contact_form.id).deliver_now
+        ContactFormMailer.enquiry_response(@contact_form.id).deliver_now
+        ContactFormMailer.enquiry_received(@contact_form.id).deliver_now
         format.html { redirect_to root_path, notice: "Your enquiry as been sent!" }
         format.json { render :show, status: :created, location: @contact_form }
       else
