@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  color: #606c76;
+  /*color: #606c76;*/
+  color: #7E8987;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   font-weight: 300;
@@ -42,8 +43,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: #68E598;
+  border: 0.1rem solid #68E598;
   border-radius: 0.4rem;
   box-sizing: border-box;
   color: #ffffff;

@@ -29,7 +29,7 @@
  }
 
  .block {
-   background-color: #ffa800;
+   background-color: #68E598;
    padding: 10px;
    margin-top: 20px;
    /*border-radius: 10px;*/
@@ -39,4 +39,9 @@
    height:1px;
    background:#b3b3b3;
    /*border-bottom:1px solid #313030;*/
+}
+
+#notice {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #68E598;
 }

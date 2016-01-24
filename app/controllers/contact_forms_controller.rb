@@ -15,7 +15,7 @@ class ContactFormsController < ApplicationController
       if @contact_form.save
         ContactFormMailer.enquiry_response(@contact_form.id).deliver_now
         ContactFormMailer.enquiry_received(@contact_form.id).deliver_now
-        format.html { redirect_to root_path, notice: "Your enquiry as been sent!" }
+        format.html { redirect_to root_path, notice: "Thanks, your enquiry as been sent!" }
         format.json { render :show, status: :created, location: @contact_form }
       else
         format.html { render :new }
