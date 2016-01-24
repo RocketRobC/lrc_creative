@@ -70,8 +70,8 @@ input[type='reset']:hover,
 input[type='reset']:focus,
 input[type='submit']:hover,
 input[type='submit']:focus {
-  background-color: #606c76;
-  border-color: #606c76;
+  background-color: #7E8987;
+  border-color: #7E8987;
   color: #ffffff;
   outline: 0;
 }
@@ -114,14 +114,14 @@ input[type='reset'].button-clear:hover,
 input[type='reset'].button-clear:focus,
 input[type='submit'].button-clear:hover,
 input[type='submit'].button-clear:focus {
-  color: #606c76;
+  color: #7E8987;
   background-color: transparent;
   border-color: transparent;
 }
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
+  border-left: 0.3rem solid #7E8987;
   font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
 }
 
@@ -172,7 +172,7 @@ input[type='text']:focus,
 input[type='url']:focus,
 textarea:focus,
 select:focus {
-  border: 0.1rem solid #9b4dca;
+  border: 0.1rem solid #68E598;
   outline: 0;
 }
 
@@ -333,7 +333,7 @@ input[type='radio'] {
   max-width: 90%;
 }
 
-@media (min-device-width: 480px) {
+@media (min-width: 40em) {
   .row {
     flex-direction: row;
     margin-left: -1rem;
@@ -345,11 +345,12 @@ input[type='radio'] {
   }
 }
 a {
-  color: #9b4dca;
+  color: #7E8987;
   text-decoration: none;
 }
 a:hover {
-  color: #606c76;
+  color: #68E598;
+  background-color: #7E8987;
 }
 
 dl,

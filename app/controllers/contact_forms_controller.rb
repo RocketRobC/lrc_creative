@@ -1,9 +1,13 @@
 class ContactFormsController < ApplicationController
-  before_action :set_contact_form, only: [:show]
 
+  before_action :set_contact_form, only: [:show]
 
   def show
     redirect_to root_path, notice: "Your enquiry as been sent!"
+  end
+
+  def new
+    redirect_to root_path, @contact_form.errors
   end
 
   # POST /contact_forms
@@ -18,7 +22,7 @@ class ContactFormsController < ApplicationController
         format.html { redirect_to root_path, notice: "Thanks, your enquiry as been sent!" }
         format.json { render :show, status: :created, location: @contact_form }
       else
-        format.html { render :new }
+        format.html { redirect_to root_path, notice: "Woops, that didn't work! Please refresh the page and submit the enquiry again." }
         format.json { render json: @contact_form.errors, status: :unprocessable_entity }
       end
     end

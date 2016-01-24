@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 	end
 
 
-  resources :contact_forms, only: :create
+  resources :contact_forms, only: [:create, :new]
 
 
   get 'home/index'

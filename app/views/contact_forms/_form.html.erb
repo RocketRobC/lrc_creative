@@ -1,3 +1,5 @@
+<h5>Contact Us. We're listening!</h5>
+
 <%= form_for @contact_form do |f| %>
   <% if @contact_form.errors.any? %>
     <div id="error_explanation">
@@ -11,31 +13,49 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+  <div class="row">
+    <div class="column">
+      <div class="field">
+        <%= f.label "First Name*" %>
+        <%= f.text_field :first_name, required: true %>
+      </div>
+    </div>
+    <div class="column">
+      <div class="field">
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name %>
+      </div>
+    </div>
+    <div class="column">
+      <div class="field">
+        <%= f.label :business_name %>
+        <%= f.text_field :business_name %>
+      </div>
+    </div>
+  </div> <!-- Row -->
+  <div class="row">
+    <div class="column">
+      <div class="field">
+        <%= f.label "Email*" %>
+        <%= f.text_field :email, required: true %>
+      </div>
+    </div>
+    <div class="column">
+      <div class="field">
+        <%= f.label :phone %>
+        <%= f.text_field :phone %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :business_name %><br>
-    <%= f.text_field :business_name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :details %><br>
-    <%= f.text_field :details %>
+  <div class="row">
+    <div class="column">
+      <div class="field">
+        <%= f.label :details %>
+        <%= f.text_area :details %>
+      </div>
+    </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Send!" %>
   </div>
 <% end %>

@@ -1,11 +1,14 @@
 <div class="text-center">
-<h2><strong>LRC Creative</strong></h2>
+  <h2 style="letter-spacing: 0.05em"><strong>LRC Creative</strong></h2>
+  </br>
+  <h5>We've experienced the nightmare of web development first hand and know there’s a better way!</h5>
+  <h5>We're committed to providing a better experience and end result for our clients.</h5>
+
 </br>
-<h5>We've experienced the nightmare of web development first hand and know there’s a better way!</h5>
-<h5>We're committed to providing a better experience and end result for our clients.</h5>
+<button><a href="#contact">Contact us now!</a></button>
+</br>
+</br>
 </div>
-</br>
-</br>
 <div class="line-separator"></div>
 </br>
 </br>
@@ -26,6 +29,6 @@
 </br>
 </br>
 
-<p class="notice" id="notice"><strong><%= notice %></strong></p>
-
-<%= notice ? nil : (render "contact_form") %>
+<h3 class="notice text-center" id="notice"><strong><%= notice %></strong></h3>
+<a id="contact"></a>
+<%= notice ? nil : (render "contact_forms/form") %>
