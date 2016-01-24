@@ -333,7 +333,7 @@ input[type='radio'] {
   max-width: 90%;
 }
 
-@media (min-width: 40rem) {
+@media (min-device-width: 480px) {
   .row {
     flex-direction: row;
     margin-left: -1rem;
