@@ -1,3 +1,33 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#headerwrap {
+  background: image-url("bg1.png") no-repeat center top;
+  // margin-top: 10px;
+  padding-top: 115px;
+  // text-align: right;
+  background-attachment: relative;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 130px;
+  width: 100%; }
+
+@media (max-width: 679px) {
+  #headerwrap {
+    background: image-url("bg1.png") no-repeat center top;
+    // margin-top: 10px;
+    padding-top: 115px;
+    // padding-bottom: 10px;
+    text-align: right;
+    background-attachment: relative;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 130px;
+    width: 100%; } }
